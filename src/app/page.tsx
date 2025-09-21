@@ -7,6 +7,7 @@ import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterBase from '@/components/footer/FooterBase';
+import { Star, DollarSign, Users } from 'lucide-react';
 
 const navbarProps = {
   navItems: [
@@ -49,7 +50,7 @@ export default function Home() {
         <HowToBuy2D variant="simple" />
       </div>
       <div id="tokenomics" data-section="tokenomics">
-        <BigNumberTokenomics title="Tokenomics" description="Learn about our token distribution and features." kpiItems={[{ value: '1B', description: 'Total Supply', longDescription: 'The total supply of tokens available.', icon: 'Star' }, { value: '20%', description: 'Liquidity', longDescription: 'Liquidity available for trading.', icon: 'DollarSign' }, { value: '10%', description: 'Team', longDescription: 'Tokens allocated to the team.', icon: 'Users' }]} />
+        <BigNumberTokenomics title="Tokenomics" description="Learn about our token distribution and features." kpiItems={[{ value: '1B', description: 'Total Supply', longDescription: 'The total supply of tokens available.', icon: Star }, { value: '20%', description: 'Liquidity', longDescription: 'Liquidity available for trading.', icon: DollarSign }, { value: '10%', description: 'Team', longDescription: 'Tokens allocated to the team.', icon: Users }]} />
       </div>
       <div id="footer" data-section="footer">
         <FooterBase logoSrc='/images/logo.svg' logoWidth={120} logoHeight={40} columns={[
